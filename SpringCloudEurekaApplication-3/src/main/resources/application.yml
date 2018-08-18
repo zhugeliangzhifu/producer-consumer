@@ -1,0 +1,13 @@
+server:
+  port: 8003
+eureka:
+  instance:
+    hostname: peer3
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8001/eureka/,http://localhost:8002/eureka/
+spring:
+  application:
+    name: spring-cloud-eureka
